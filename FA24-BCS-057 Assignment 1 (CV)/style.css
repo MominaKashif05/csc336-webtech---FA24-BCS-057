@@ -1,0 +1,303 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5e7eb;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cv-page {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative; 
+}
+
+/* --- TOP HEADER --- */
+.top-header {
+    position: relative;
+    padding: 40px 40px 10px 40px;
+    background-color: #ffffff;
+}
+
+.avatar-container {
+    float: left;
+    width: 25%;
+    padding-top: 10px;
+}
+
+.avatar-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: block;
+}
+
+.name-title-block {
+    float: left;
+    width: 70%;
+    padding-top: 25px; 
+}
+
+.name-title-block h1 {
+    color: #0446EF; 
+    font-size: 2.8em;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+}
+
+.name-title-block h2 {
+    color: #0446EF; 
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- BANNER --- */
+.purple-banner {
+    background-color: #411E57; 
+    color: #ffffff;
+    padding: 30px 40px;
+}
+
+.objective-block {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.objective-block h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.objective-block p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.7;
+}
+
+.contact-grid {
+    padding-top: 20px;
+}
+
+.contact-item {
+    display: inline-block;
+    width: 32%; 
+    margin-bottom: 15px;
+    font-size: 0.85em;
+    vertical-align: middle;
+}
+
+.contact-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.icon-circle {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    color: #411E57; 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+
+.cv-body {
+    padding: 40px;
+}
+
+
+.section {
+    margin-bottom: 45px; 
+}
+
+.section-title {
+    font-size: 1.1em;
+    color: #872D72; 
+    border-bottom: 1.5px solid #e0e0e0;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry-header {
+    margin-bottom: 5px;
+}
+
+.entry-name {
+    float: left;
+    font-weight: bold;
+    font-size: 0.95em;
+    color: #222222;
+}
+
+.entry-date {
+    float: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #444444;
+}
+
+.entry-details {
+    clear: both;
+    margin-left: 18px; 
+    font-size: 0.9em;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.entry-details em {
+    display: block;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.left-skill {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.right-skill {
+    float: left;
+    width: 48%;
+    margin-right: 0;
+}
+
+.skill-title {
+    font-size: 0.9em;
+    color: #444444;
+    font-weight: bold; 
+}
+
+
+.pill-container {
+    padding-top: 5px;
+}
+
+.lang-pill {
+    display: inline-block;
+    background-color: #FE6EF0; 
+    color: #1C1859; 
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin: 0 10px 12px 0;
+}
+
+.card-grid {
+    width: 100%;
+}
+
+.box-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 22px; 
+    margin-bottom: 20px;
+}
+
+.half-card {
+    float: left;
+    width: 48%;
+}
+
+.left-card {
+    margin-right: 4%;
+}
+
+.right-card {
+    margin-right: 0;
+}
+
+.full-card {
+    clear: both;
+    width: 100%;
+}
+
+.accent-border {
+    border: 1px solid #7C4EBB; 
+}
+
+.box-card h4 {
+    margin: 0 0 10px 0;
+    color: #0f172a;
+    font-size: 0.95em;
+}
+
+.box-card p {
+    margin: 0 0 15px 0;
+    color: #64748b;
+    font-size: 0.85em;
+    line-height: 1.5;
+    min-height: 60px; 
+}
+
+.full-card p {
+    min-height: auto; 
+}
+
+.card-tags {
+    margin-bottom: 12px;
+}
+
+.box-tag {
+    display: inline-block;
+    background-color: #AB88EE; 
+    color: #1C1859; 
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin: 0 8px 8px 0;
+}
+
+.card-link {
+    display: block;
+    color: #F10393; 
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
