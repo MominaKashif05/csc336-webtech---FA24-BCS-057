@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora Clone | Jewelry & Charms</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="fixed-top bg-transparent transition-header" id="mainHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3 flex-column align-items-stretch">
+            <div class="container-fluid px-4 d-flex justify-content-between align-items-center w-100">
+                <!-- Brand Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="pandora_logo.png" alt="Pandora Logo" height="22" class="nav-logo">
+                </a>
+
+                <!-- Search Bar -->
+                <div class="d-none d-lg-flex flex-grow-1 mx-5 position-relative">
+                    <input type="text" class="form-control rounded-pill bg-dark text-light border-secondary ps-5 py-2 small" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass position-absolute text-muted" style="top: 12px; left: 18px;"></i>
+                </div>
+
+                <!-- Utility Icons -->
+                <div class="d-flex align-items-center gap-4 text-white">
+                    <a href="#" class="text-white text-decoration-none d-none d-lg-block"><i class="fa-regular fa-heart fa-lg"></i></a>
+                    <a href="#" class="text-white text-decoration-none d-none d-lg-block"><i class="fa-regular fa-user fa-lg"></i></a>
+                    <a href="checkout.html" class="text-white text-decoration-none"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+                    <!-- Mobile Hamburger Button -->
+                    <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TIER 2: Navigation Links -->
+            <div class="container-fluid px-4 mt-2">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-capitalize small fw-semibold w-100 justify-content-center gap-4">
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Holiday</a></li>
+                        
+                        <!-- TASK 1: Shop by Category Mega Menu & Mobile Accordion -->
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link text-white px-0 dropdown-toggle" href="#" id="shopByCategoryDropdown" role="button">
+                                Shop by Category
+                            </a>
+                            
+                            <!-- DESKTOP MEGA MENU PANEL -->
+                            <div class="mega-menu-panel shadow-lg p-4 bg-white text-dark">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <h6 class="fw-bold text-uppercase border-bottom pb-2 mb-3">Charms & Wearables</h6>
+                                        <ul class="list-unstyled d-flex flex-column gap-2 small">
+                                            <li><a href="#" class="text-muted text-decoration-none">Charm Bracelets</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">Dangle Charms</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">Safety Chains</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">Spacer Charms</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6 class="fw-bold text-uppercase border-bottom pb-2 mb-3">Rings & Metals</h6>
+                                        <ul class="list-unstyled d-flex flex-column gap-2 small">
+                                            <li><a href="#" class="text-muted text-decoration-none">Sterling Silver Rings</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">14k Gold Plated</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">Pandora Rose</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">Gemstone & Birthstone</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6 class="fw-bold text-uppercase border-bottom pb-2 mb-3">Collections</h6>
+                                        <ul class="list-unstyled d-flex flex-column gap-2 small">
+                                            <li><a href="#" class="text-muted text-decoration-none">Marvel x Pandora</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">Disney x Pandora</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">Pandora Moments</a></li>
+                                            <li><a href="#" class="text-muted text-decoration-none">Lab-Grown Diamonds</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- MOBILE ACCORDION -->
+                            <div class="d-lg-none mt-2 mobile-accordion-wrapper">
+                                <details class="text-white mb-2">
+                                    <summary class="fw-semibold small py-1 cursor-pointer">Shop by Category</summary>
+                                    <div class="ps-3 pt-2 d-flex flex-column gap-2 small text-light">
+                                        <p class="fw-bold mb-1 text-warning">Charms & Wearables</p>
+                                        <a href="#" class="text-light text-decoration-none">Charm Bracelets</a>
+                                        <a href="#" class="text-light text-decoration-none">Dangle Charms</a>
+                                        <a href="#" class="text-light text-decoration-none">Safety Chains</a>
+                                        <a href="#" class="text-light text-decoration-none">Spacer Charms</a>
+
+                                        <p class="fw-bold mb-1 mt-2 text-warning">Rings & Metals</p>
+                                        <a href="#" class="text-light text-decoration-none">Sterling Silver Rings</a>
+                                        <a href="#" class="text-light text-decoration-none">14k Gold Plated</a>
+                                        <a href="#" class="text-light text-decoration-none">Pandora Rose</a>
+                                        <a href="#" class="text-light text-decoration-none">Gemstone & Birthstone</a>
+
+                                        <p class="fw-bold mb-1 mt-2 text-warning">Collections</p>
+                                        <a href="#" class="text-light text-decoration-none">Marvel x Pandora</a>
+                                        <a href="#" class="text-light text-decoration-none">Disney x Pandora</a>
+                                        <a href="#" class="text-light text-decoration-none">Pandora Moments</a>
+                                        <a href="#" class="text-light text-decoration-none">Lab-Grown Diamonds</a>
+                                    </div>
+                                </details>
+                            </div>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">New & Featured</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Charms</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Bracelets</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Rings</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Necklaces</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Earrings</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Lab-grown diamonds</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Engraving</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Gifts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="main-banner dark-hero d-flex align-items-end pb-5">
+        <video autoplay loop muted playsinline class="banner-video">
+            <source src="pandora_landing.mp4" type="video/mp4">
+        </video>
+        <div class="container position-relative text-white mb-5 z-2">
+            <p class="text-uppercase small tracking-widest mb-1">Engravable charms</p>
+            <h1 class="display-3 fw-bold mb-3">FROM YOUR HEART<br>TO THEIRS</h1>
+            <a href="#shop" class="text-white text-decoration-none fw-semibold border-bottom pb-1">SHOP HOLIDAY GIFTS</a>
+        </div>
+    </section>
+
+    <!-- Promotional Split Banner Section -->
+    <section class="container-fluid px-0 my-5">
+        <div class="row g-0 align-items-center bg-light">
+            <div class="col-md-6 text-center p-5">
+                <span class="text-uppercase small fw-bold text-muted">Special Offer</span>
+                <h2 class="fw-bold display-6 my-3">Double Points on All Charms</h2>
+                <p class="text-muted mb-4">Stack your bracelets with your favorite Marvel and Disney icons and earn double rewards.</p>
+                <a href="#shop" class="btn btn-dark px-4 py-2 rounded-pill">Shop Collection</a>
+            </div>
+            <div class="col-md-6">
+                <img src="double_charms.png" class="img-fluid w-100" alt="Double Charms Offer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="shop" class="container py-5">
+        <h2 class="fw-bold mb-4 text-center">Featured Favorites</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+            
+            <!-- Product Card 1 -->
+            <div class="col">
+                <div class="card h-100 border-0 position-relative">
+                    <a href="product.html">
+                        <img src="doom_mask.jpg" class="card-img-top img-fluid rounded-3" alt="Doctor Doom Mask Charm">
+                    </a>
+                    <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-dark fs-5 bg-white p-2 rounded-circle shadow-sm"></i>
+                    <div class="card-body px-0">
+                        <p class="small text-muted text-uppercase mb-1">Marvel x Pandora</p>
+                        <h5 class="card-title fs-6 fw-bold">Disney Marvel Doctor Doom Mask Charm</h5>
+                        <p class="card-text fw-bold">$115.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="col">
+                <div class="card h-100 border-0 position-relative">
+                    <img src="loki_helmet.jpg" class="card-img-top img-fluid rounded-3" alt="Loki Helmet Charm">
+                    <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-dark fs-5 bg-white p-2 rounded-circle shadow-sm"></i>
+                    <div class="card-body px-0">
+                        <p class="small text-muted text-uppercase mb-1">Marvel x Pandora</p>
+                        <h5 class="card-title fs-6 fw-bold">Disney Marvel Loki Helmet Double Dangle Charm</h5>
+                        <p class="card-text fw-bold">$95.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="col">
+                <div class="card h-100 border-0 position-relative">
+                    <img src="ironman_helmet.jpg" class="card-img-top img-fluid rounded-3" alt="Iron Man Helmet Charm">
+                    <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-dark fs-5 bg-white p-2 rounded-circle shadow-sm"></i>
+                    <div class="card-body px-0">
+                        <p class="small text-muted text-uppercase mb-1">Marvel x Pandora</p>
+                        <h5 class="card-title fs-6 fw-bold">Disney Marvel Iron Man Arc Reactor Charm</h5>
+                        <p class="card-text fw-bold">$90.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="col">
+                <div class="card h-100 border-0 position-relative">
+                    <img src="infinity_stones_ring.jpg" class="card-img-top img-fluid rounded-3" alt="Infinity Stones Ring">
+                    <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-dark fs-5 bg-white p-2 rounded-circle shadow-sm"></i>
+                    <div class="card-body px-0">
+                        <p class="small text-muted text-uppercase mb-1">Marvel x Pandora</p>
+                        <h5 class="card-title fs-6 fw-bold">Disney Marvel Infinity Stones Ring</h5>
+                        <p class="card-text fw-bold">$150.00</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="bg-black text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Shop</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2 text-muted">
+                        <li><a href="#" class="text-muted text-decoration-none">Charms</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Bracelets</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Rings</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Necklaces</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Customer Service</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2 text-muted">
+                        <li><a href="#" class="text-muted text-decoration-none">Track Order</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Returns</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2 text-muted">
+                        <li><a href="#" class="text-muted text-decoration-none">Click & Collect</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Gift Cards</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Store Locator</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-3">About Pandora</h6>
+                    <p class="small text-muted">The world's largest jewelry brand, designing hand-finished contemporary jewelry.</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center small text-muted">
+                &copy; 2026 Pandora Jewelry, LLC. All rights reserved. FA24-BCS-057.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

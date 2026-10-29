@@ -1,0 +1,69 @@
+/* --- GLOBAL RESET & BASE STYLES --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- HERO SECTION STYLING --- */
+.main-banner {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+
+.main-banner .container {
+    z-index: 2;
+}
+
+/* --- LOGO FILTER TRICK --- */
+.nav-logo {
+    filter: brightness(0) invert(1);
+}
+
+/* --- TASK 1: PURE CSS MEGA-MENU & MOBILE ACCORDION --- */
+
+/* Hide desktop mega menu by default */
+.mega-menu-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Floats cleanly above product cards and page content */
+    border-top: 3px solid hsl(39, 70%, 45%); /* Accent color based on roll number N=57 */
+}
+
+/* Trigger mega menu on hover or keyboard tab focus (:focus-within) at breakpoint 657px and wider */
+@media (min-width: 657px) {
+    .nav-item.dropdown.position-static:hover .mega-menu-panel,
+    .nav-item.dropdown.position-static:focus-within .mega-menu-panel {
+        display: block;
+    }
+    
+    /* Hide mobile accordion on desktop/tablet */
+    .mobile-accordion-wrapper {
+        display: none !important;
+    }
+}
+
+/* On mobile screens below 657px, ensure desktop mega menu is hidden */
+@media (max-width: 656px) {
+    .mega-menu-panel {
+        display: none !important;
+    }
+}
