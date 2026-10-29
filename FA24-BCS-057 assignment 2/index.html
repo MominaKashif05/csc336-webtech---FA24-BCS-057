@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Assignment 2 | Momina Kashif (FA24-BCS-057) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora Clone | Jewelry & Charms</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navbar -->
+    <header class="fixed-top bg-transparent transition-header" id="mainHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 flex-column align-items-stretch">
+            
+            <!-- TIER 1: Logo, Search, and Icons -->
+            <div class="container-fluid px-4 d-flex justify-content-between align-items-center w-100">
+                <div class="d-flex nav-flex-side">
+                    <a class="navbar-brand m-0" href="index.html">
+                        <img src="pandora_logo.png" alt="Pandora Logo" class="nav-logo">
+                    </a>
+                </div>
+                
+                <div class="d-none d-lg-flex justify-content-center nav-flex-side">
+                    <div class="search-bar border-bottom pb-1 d-flex align-items-center search-container">
+                        <i class="fa-solid fa-magnifying-glass text-white me-2 small"></i>
+                        <input type="text" placeholder="Search" class="bg-transparent border-0 text-white shadow-none w-100 search-input">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end align-items-center gap-4 nav-flex-side">
+                    <a href="#" class="text-white d-lg-none"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="text-white d-none d-lg-block"><i class="fa-regular fa-heart fs-5"></i></a>
+                    <a href="#" class="text-white d-none d-lg-block"><i class="fa-solid fa-location-dot fs-5"></i></a>
+                    <a href="#" class="text-white d-none d-lg-block"><i class="fa-regular fa-user fs-5"></i></a>
+                    <a href="#" class="text-white"><i class="fa-solid fa-bag-shopping fs-5"></i></a>
+                    <button class="navbar-toggler border-0 text-white p-0 ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TIER 2: Navigation Links -->
+            <div class="container-fluid px-4 mt-2">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-capitalize small fw-semibold w-100 justify-content-center gap-4">
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Holiday</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">New & featured</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Charms</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Bracelets</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Rings</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Necklaces</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Earrings</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Lab-grown diamonds</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Engraving</a></li>
+                        <li class="nav-item"><a class="nav-link text-white px-0" href="#">Gifts</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="main-banner dark-hero d-flex align-items-end pb-5">
+        <video autoplay loop muted playsinline class="banner-video">
+            <source src="pandora_landing.mp4" type="video/mp4">
+        </video>
+        <div class="container-fluid px-5 position-relative z-1 mb-5">
+            <div class="banner-content text-white">
+                <p class="small fw-semibold mb-2">Engravable charms</p>
+                <h1 class="display-4 fw-bold mb-4">FROM YOUR HEART<br>TO THEIRS</h1>
+                <a href="#shop" class="btn btn-dark-brown rounded-0 px-4 py-3 text-uppercase fw-bold small">Shop Holiday Gifts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Double Points Promo Section -->
+    <section class="container-fluid my-5 px-0">
+        <div class="row g-0 align-items-center">
+            <div class="col-md-6 bg-pink-light">
+                <img src="double_charms.png" class="img-fluid w-100" alt="Double Points Bracelets">
+            </div>
+            <div class="col-md-6 px-5 py-5 text-center text-md-start">
+                <div class="max-w-400 mx-auto mx-md-0 ms-md-5">
+                    <span class="badge bg-pink text-dark rounded-0 mb-3 fw-normal py-2 px-3">Limited Time Only</span>
+                    <h2 class="display-6 fw-bold mb-3">DOUBLE POINTS ON<br>CHARMS</h2>
+                    <p class="small text-muted mb-4">Not a My Pandora Member? Sign Up or Log In now! Terms & Conditions apply.</p>
+                    <a href="#" class="text-dark text-decoration-underline fw-semibold text-uppercase small">Shop Charms</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="shop" class="container py-5 my-4">
+        <h3 class="text-center mb-5 fw-bold text-uppercase fs-4">Marvel x Pandora</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+            
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <div class="card-img-wrapper position-relative">
+                        <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-secondary fs-5"></i>
+                        <a href="product.html">
+                            <img src="doom_mask.jpg" class="card-img-top rounded-0" alt="Disney Marvel Doctor Doom Mask Charm">
+                        </a>
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <a href="product.html" class="text-decoration-none text-dark">
+                            <h6 class="card-title">Disney Marvel Doctor Doom Mask Charm</h6>
+                        </a>
+                        <p class="card-text">$75.00</p>
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase small fw-bold mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <div class="card-img-wrapper position-relative">
+                        <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-secondary fs-5"></i>
+                        <img src="loki_helmet.jpg" class="card-img-top rounded-0" alt="Disney Marvel Loki Helmet Charm">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Disney Marvel Loki Helmet Charm</h6>
+                        <p class="card-text">$75.00</p>
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase small fw-bold mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <div class="card-img-wrapper position-relative">
+                        <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-secondary fs-5"></i>
+                        <img src="spiderman_dangle.jpg" class="card-img-top rounded-0" alt="Marvel Hanging Spider-Man Dangle Charm">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Marvel Hanging Spider-Man Dangle Charm</h6>
+                        <p class="card-text">$80.00</p>
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase small fw-bold mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <div class="card-img-wrapper position-relative">
+                        <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-secondary fs-5"></i>
+                        <img src="ironman_helmet.jpg" class="card-img-top rounded-0" alt="Marvel Iron Man Helmet Charm">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Marvel Iron Man Helmet Charm</h6>
+                        <p class="card-text">$75.00</p>
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase small fw-bold mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <div class="card-img-wrapper position-relative">
+                        <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-secondary fs-5"></i>
+                        <img src="infinity_stones_ring.jpg" class="card-img-top rounded-0" alt="Marvel The Avengers Infinity Stones Ring">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Marvel The Avengers Infinity Stones Ring</h6>
+                        <p class="card-text">$100.00</p>
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase small fw-bold mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <div class="card-img-wrapper position-relative">
+                        <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-secondary fs-5"></i>
+                        <img src="arc_reactor.jpg" class="card-img-top rounded-0" alt="Marvel Iron Man Arc Reactor Dangle Charm">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Marvel Iron Man Arc Reactor Dangle Charm</h6>
+                        <p class="card-text">$85.00</p>
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase small fw-bold mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <div class="card-img-wrapper position-relative">
+                        <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-secondary fs-5"></i>
+                        <img src="avengers_bracelet.jpg" class="card-img-top rounded-0" alt="Pandora Moments Marvel The Avengers Logo Clasp Snake Chain Bracelet">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Pandora Moments Marvel The Avengers Logo Clasp Snake Chain Bracelet</h6>
+                        <p class="card-text">$95.00</p>
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase small fw-bold mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col">
+                <div class="card h-100 border-0 product-card">
+                    <div class="card-img-wrapper position-relative">
+                        <i class="fa-regular fa-heart position-absolute top-0 end-0 m-3 text-secondary fs-5"></i>
+                        <img src="scarlet_witch_ring.jpg" class="card-img-top rounded-0" alt="Marvel Scarlet Witch Ring">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Marvel Scarlet Witch Ring</h6>
+                        <p class="card-text">$90.00</p>
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase small fw-bold mt-auto">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Feature Icons -->
+    <div class="container-fluid border-top border-bottom py-5 mt-5 bg-white">
+        <div class="container">
+            <div class="row text-center text-md-start text-lg-center gy-4">
+                <div class="col-6 col-lg-3">
+                    <i class="fa-solid fa-rotate-left fs-3 mb-3 text-secondary"></i>
+                    <p class="fw-semibold small mb-0">Extended Holiday Returns</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <i class="fa-solid fa-truck-fast fs-3 mb-3 text-secondary"></i>
+                    <p class="fw-semibold small mb-0">Free shipping on orders $80+</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <i class="fa-solid fa-gift fs-3 mb-3 text-secondary"></i>
+                    <p class="fw-semibold small mb-0">Gift packaging available</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <i class="fa-solid fa-shield-halved fs-3 mb-3 text-secondary"></i>
+                    <p class="fw-semibold small mb-0">Complimentary 1-year warranty</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-4 mb-5">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6 class="text-uppercase mb-4 fw-semibold">Shop</h6>
+                    <ul class="list-unstyled small text-muted lh-lg">
+                        <li><a href="#" class="text-muted text-decoration-none">Charms</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Bracelets</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Rings</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Necklaces & Pendants</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Earrings</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Lab-Grown Diamonds</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Pandora Collections</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Gifts</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h6 class="text-uppercase mb-4 fw-semibold">Resources</h6>
+                    <ul class="list-unstyled small text-muted lh-lg">
+                        <li><a href="#" class="text-muted text-decoration-none">Check Order Status</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Shipping, Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Product Care</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Warranty</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h6 class="text-uppercase mb-4 fw-semibold">Services</h6>
+                    <ul class="list-unstyled small text-muted lh-lg">
+                        <li><a href="#" class="text-muted text-decoration-none">My Pandora</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Buy Now, Pay Later</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Pick Up In Store</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <h6 class="text-uppercase mb-4 fw-semibold">Legal</h6>
+                    <ul class="list-unstyled small text-muted lh-lg">
+                        <li><a href="#" class="text-muted text-decoration-none">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Do Not Sell or Share My Info</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <h6 class="text-uppercase mb-4 fw-semibold">About Us</h6>
+                    <ul class="list-unstyled small text-muted lh-lg">
+                        <li><a href="#" class="text-muted text-decoration-none">About Pandora</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Sustainability</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Store Finder</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top pt-4">
+                <h3 class="fw-bold mb-3 mb-md-0">PANDORA</h3>
+                <div class="d-flex align-items-center gap-3 small text-muted">
+                    <span class="text-dark fw-semibold text-uppercase border-bottom border-dark pb-1">United States</span>
+                    <span>English</span>
+                    <span>&copy; ALL RIGHTS RESERVED. 2026 Pandora</span>
+                </div>
+                <div class="d-flex gap-3 fs-5 mt-3 mt-md-0">
+                    <a href="#" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-dark"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
