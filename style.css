@@ -1,0 +1,60 @@
+/* Custom CSS for Pandora Clone - Assignment 2 */
+
+/* Navbar Logo Styling */
+.nav-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* Navbar Flex Layout Helpers */
+.nav-flex-side {
+    flex: 1;
+}
+
+/* Search Bar Styling */
+.search-container {
+    width: 250px;
+}
+
+.search-input {
+    outline: none;
+}
+
+/* Hero Banner & Video */
+.main-banner {
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+}
+
+.banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Promo Sections */
+.bg-pink-light {
+    background-color: #fce4ec;
+}
+
+.max-w-400 {
+    max-width: 400px;
+}
+
+/* Product Detail Page Gallery Helpers */
+.product-image-container {
+    min-height: 450px;
+}
+
+.product-img-max {
+    max-height: 400px;
+    object-fit: contain;
+}
