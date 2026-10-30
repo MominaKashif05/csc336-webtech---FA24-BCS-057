@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - Responsive Navbar and Grid Drill</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Responsive Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Logo (Left) -->
+                <div class="flex-shrink-0 font-bold text-xl tracking-wider text-indigo-600">
+                    ShopLogo
+                </div>
+
+                <!-- Navigation Links (Center - Hidden on mobile, flex on md+) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-indigo-600 font-medium">Home</a>
+                    <a href="#shop" class="text-gray-600 hover:text-indigo-600 font-medium">Shop</a>
+                    <a href="#categories" class="text-gray-600 hover:text-indigo-600 font-medium">Categories</a>
+                    <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
+                </nav>
+
+                <!-- Cart Icon / Actions (Right) -->
+                <div class="flex items-center space-x-4">
+                    <button class="relative text-gray-600 hover:text-indigo-600 focus:outline-none" aria-label="Cart">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <span class="absolute -top-1 -right-2 bg-indigo-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                    </button>
+
+                    <!-- Mobile Menu Button (Visible below 768px) -->
+                    <button id="menu-btn" class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu dropdown (Collapsing menu) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block text-gray-600 hover:text-indigo-600 font-medium py-1">Home</a>
+            <a href="#shop" class="block text-gray-600 hover:text-indigo-600 font-medium py-1">Shop</a>
+            <a href="#categories" class="block text-gray-600 hover:text-indigo-600 font-medium py-1">Categories</a>
+            <a href="#contact" class="block text-gray-600 hover:text-indigo-600 font-medium py-1">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Grid Drill -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h1 class="text-2xl font-bold mb-6 text-gray-900">Featured Products Grid</h1>
+        
+        <!-- Product Grid: 1 col (phone), 2 cols (tablet / sm:md), 4 cols (desktop / lg+) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Product Card 1 -->
+            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-400 font-semibold">Placeholder Image</div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Product Item 1</h3>
+                    <p class="text-gray-500 text-sm mt-1">$29.99</p>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-400 font-semibold">Placeholder Image</div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Product Item 2</h3>
+                    <p class="text-gray-500 text-sm mt-1">$45.00</p>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-400 font-semibold">Placeholder Image</div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Product Item 3</h3>
+                    <p class="text-gray-500 text-sm mt-1">$19.99</p>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                <div class="bg-gray-200 h-48 flex items-center justify-center text-gray-400 font-semibold">Placeholder Image</div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Product Item 4</h3>
+                    <p class="text-gray-500 text-sm mt-1">$89.99</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Simple JavaScript for Hamburger toggle -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
