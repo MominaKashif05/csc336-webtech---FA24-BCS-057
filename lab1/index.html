@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile | Lecture 05 Practice</title>
+  
+  <!-- 1. External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 2. Internal Style Sheet (used to demonstrate the Cascade & specificity) -->
+  <style>
+    /* This overrides external body font if placed after, or shows precedence */
+    .note {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Header with ID Selector -->
+  <header id="main-header">
+    <h1 class="page-title">Jane Doe</h1>
+    <p class="subtitle">Undergraduate Student &amp; Web Development Apprentice</p>
+  </header>
+
+  <main>
+    <!-- Section with Type & Class Selectors -->
+    <section class="bio-section">
+      <!-- Try ::first-letter or ::before pseudo-elements here -->
+      <p class="intro-paragraph">
+        Welcome to my academic profile page. I am currently learning web technologies, focusing on core Cascading Style Sheets syntax, selector specificity, typography, and color systems.
+      </p>
+
+      <!-- 3. Inline Style (Demonstrating highest specificity level) -->
+      <p style="color: darkred; font-weight: bold;">
+        [Notice: Currently updating coursework records for the current semester.]
+      </p>
+    </section>
+
+    <!-- Grouping & Descendant Selectors -->
+    <section class="content-section" id="coursework">
+      <h2>Enrolled Courses</h2>
+      <p>A list of courses completed and in progress:</p>
+      
+      <!-- Descendant selector practice: .course-list li or section ul -->
+      <ul class="course-list">
+        <li>Web Technologies (CSC336)</li>
+        <li>Data Structures &amp; Algorithms</li>
+        <li>Database Systems</li>
+        <li>Computer Networks</li>
+      </ul>
+    </section>
+
+    <!-- Pseudo-classes (:nth-child, :first-child, :hover) -->
+    <section class="content-section" id="milestones">
+      <h2>Project Milestones</h2>
+      <ol class="milestone-list">
+        <li>Completed HTML5 Semantic Structure</li>
+        <li>Implemented CSS Fundamental Styles</li>
+        <li>Configured Form Elements and Validation</li>
+        <li>Built Responsive Navigation System</li>
+      </ol>
+    </section>
+
+    <!-- Attribute Selectors & Interactive Pseudo-classes (:focus, :hover, :active) -->
+    <section class="content-section" id="contact-area">
+      <h2>Leave a Message</h2>
+      <form class="contact-form" action="#" method="post">
+        
+        <!-- Target via: input[type="text"] -->
+        <label for="student-name">Your Name:</label>
+        <input type="text" id="student-name" name="student-name" placeholder="e.g., Alex Smith">
+
+        <!-- Target via: input[type="email"] -->
+        <label for="student-email">Email Address:</label>
+        <input type="email" id="student-email" name="student-email" placeholder="name@university.edu">
+
+        <label for="comments">Inquiry / Note:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Write your message..."></textarea>
+
+        <!-- Target via: input[type="submit"] or button -->
+        <input type="submit" value="Send Inquiry">
+      </form>
+    </section>
+
+    <!-- Links for pseudo-classes (:link, :visited, :hover, :active) -->
+    <footer id="site-footer">
+      <p>Connect with me:</p>
+      <nav class="footer-links">
+        <a href="https://github.com" target="_blank">GitHub Profile</a> |
+        <a href="https://linkedin.com" target="_blank">LinkedIn Network</a> |
+        <a href="#main-header">Back to Top</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Jane Doe. Built for Lecture 05 Practice.</p>
+    </footer>
+  </main>
+
+</body>
+</html>
